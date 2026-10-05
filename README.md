@@ -48,7 +48,7 @@ xxx
 This data repository consist of 7 data files, 3 code scripts, and this README document, with the following data and code filenames and variables
 
 ## Repository Structure
-├── data/ # folder with .csv data files
+├── data/ # folder with .csv or .csv.zip data files
 ├── src/  # Source code
 │   ├── CustomFunctions/   # Two custom R functions for efficient analyses 
 │   └── MateChoiceInbreedingToleranceAnalysis.R    # R script for all analyses
@@ -196,7 +196,7 @@ This script has code for running all analyses and making figures and tables in t
 
 	This function runs generalized linear mixed models with a binomial error structure to estimate the relationship between the likelihood of a potential mate being a close relative and dispersal distance. The models are run separately by sex and pairing type.
 
-Workflow: the main analysis script (MateChoiceInbreedingToleranceAnalysis.R) can be run as a standalone script. It will load data files from a "data" directory in the working directory and call custom functions from a "CustomFunctions" directory within the "src" directory in the working directory.
+Workflow: Unzip the zipped .csv data files (all simulation results). The main analysis script (MateChoiceInbreedingToleranceAnalysis.R) can then be run as a standalone script. It will load data files from a "data" directory in the working directory and call custom functions from a "CustomFunctions" directory within the "src" directory in the working directory.
 
 # SOFTWARE VERSIONS
 
